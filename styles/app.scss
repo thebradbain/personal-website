@@ -1,0 +1,136 @@
+@import "resume";
+@import "../lib/bootstrap.min";
+$dark: #141414;
+$light: white;
+$accent: #00a5c2;
+$header-font: league-gothic, sans;
+$body-font: pt-serif, serif;
+$gutter: 20px;
+
+@mixin _breakpoints($min, $max: false) {
+    /*@if $max == false {
+        @media only screen and (min-width: $min) {
+            @content;
+        }
+    }
+    @else {
+        @media only screen and (min-width: $min) and (max-width: $max) {
+            @content;
+        }
+    }*/
+}
+
+@mixin transistion($transistion) {
+    transistion: $transistion;
+    -webkit-transition: $transistion;
+    -moz-transition: $transistion;
+}
+
+@mixin box-sizing {
+    box-sizing: border-box;
+    moz-box-sizing: border-box;
+    webkit-box-sizing: border-box;
+}
+
+body {
+    color: $dark;
+    background: #e4e4e4;
+    font-family: $body-font;
+    h1, h2, h3, h4, h5, h5 {
+        font-family: $header-font;
+        text-transform: uppercase;
+    }
+    ul, ol {
+        margin-bottom: 0;
+    }
+    a {
+        color: inherit;
+        font-family: inherit;
+        text-decoration: none;
+        &:hover {
+            color: lighten($dark, 25%);
+            @include transistion(color 0.25s);
+        }
+    }
+    .underline {
+        text-decoration: underline;
+    }
+
+    .accent {
+        color: $accent;
+    }
+}
+
+.nav-els {
+    @include box-sizing;
+    background: url(../images/diagonal-overlay.jpg) repeat, url(../images/dallas-fog-bw.jpg) no-repeat;
+    background-size: auto, cover;
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+    padding: $gutter;
+    font-family: $header-font;
+    li {
+        list-style-type: none;
+        line-height: 0.85em;
+    }
+}
+
+.panel {
+    @include box-sizing;
+    opacity: 0.6;
+    padding: $gutter;
+    width: 100%;
+    margin-bottom: 0;
+    .content {
+        font-family: $body-font;
+        h2 {
+            margin-top: 0;
+            margin-bottom: 0;
+            font-size: 2.5em;
+        }
+    }
+
+    &:empty {
+        padding: 0;
+    }
+}
+
+.position {
+    font-size: 70%;
+    font-style: italic;
+    margin-top: -5px;
+
+}
+
+ul {
+    margin-left: 0;
+    padding-left: 0;
+
+    ul li {
+        line-height: normal;
+    }
+
+    li:last-child {
+        margin-bottom: $gutter;
+    }
+}
+
+ul .bullets {
+    margin-left: 5px;
+    margin-right: 0;
+    padding-left: 10px;
+    padding-right: 0px;
+    li { 
+        list-style-type: circle;
+    }
+}
+
+.title {
+    font-size: 300%;
+    margin-top: 0;
+}
+
+h3 {
+    margin-bottom: 0;
+}
