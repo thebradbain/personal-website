@@ -1,32 +1,3 @@
-function GridSizer(prefix, maxHeight) {
-    if (!prefix) prefix = "";
-    this.vars = {
-        navigationItems: $(prefix + " .nav-els").children(),
-        maxHeight: maxHeight || $(window).height(),
-    },
-    this.init = function() {
-        this.setRowHeight();
-        this.events();
-    };
-    this.events = function() {
-        var that = this;
-        $(window).resize(function() {
-            that.setRowHeight();
-        });
-    };
-    this.setRowHeight = function() {
-        var navigationItems = this.vars.navigationItems;
-        var maxHeight = this.vars.maxHeight;
-
-        var numberNavigationItems = navigationItems.length;
-        var navigationItemHeight = maxHeight / numberNavigationItems;
-
-        navigationItems.height(navigationItemHeight);
-        navigationItems.css("font-size", navigationItemHeight.toString() + "px");
-
-    };
-}
-
 var pageLoader = {
     init: function() {
         this.events();
@@ -62,8 +33,6 @@ var pageLoader = {
 };
 
 $(document).ready(function() {
-    var gridSizer = new GridSizer();
-    gridSizer.init();
     pageLoader.init();
 
     $('body').flowtype({

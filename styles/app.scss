@@ -32,7 +32,12 @@ $gutter: 20px;
     webkit-box-sizing: border-box;
 }
 
+html {
+    height: 100%;
+}
+
 body {
+    height: 100%;
     color: $dark;
     background: #e4e4e4;
     font-family: $body-font;
@@ -48,8 +53,10 @@ body {
         font-family: inherit;
         text-decoration: none;
         &:hover {
-            color: lighten($dark, 25%);
-            @include transistion(color 0.25s);
+            text-decoration: none;
+            color: lighten($dark, 15%);
+            cursor: pointer;
+            @include transistion(color 0.05s);
         }
     }
     .underline {
@@ -63,16 +70,20 @@ body {
 
 .nav-els {
     @include box-sizing;
-    background: url(../images/diagonal-overlay.jpg) repeat, url(../images/dallas-fog-bw.jpg) no-repeat;
-    background-size: auto, cover;
+    background: url(../images/brad-downtown-flipped.jpeg) no-repeat;
+    background-size: cover;
+    background-position: 75%;
     display: table;
     width: 100%;
+    height: 100%;
     box-sizing: border-box;
     padding: $gutter;
     font-family: $header-font;
     li {
         list-style-type: none;
         line-height: 0.85em;
+        font-size: 25vh;
+        height: 25%;
     }
 }
 
