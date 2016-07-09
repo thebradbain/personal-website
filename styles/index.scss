@@ -1,0 +1,41 @@
+.header {    
+    @include box-sizing;
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.45), 
+      rgba(255, 255, 255, 0.45)
+    ),
+
+    url(../images/brad-downtown-flipped.jpeg) no-repeat;
+
+    background-size: cover;
+    background-position: 75%;
+    height: 100%;
+
+    h1 {
+        text-align: center;
+        padding: $gutter * 4;
+        padding-top: 0;
+        padding-bottom: $gutter;
+        font-size: 25px;
+    }
+}
+
+.nav-els {
+    @include box-sizing;
+    box-sizing: border-box;
+    padding: $gutter;
+    font-family: $body-font;
+    li {
+        list-style-type: none;
+        display: inline-block;
+        font-size: 14px;
+        letter-spacing: 0.2em;
+        padding-right: 4.5px;
+        padding-left: 4.5px;
+        font-weight: 500;
+        font-style: normal;
+        text-transform: uppercase;
+        background: $dark;
+        color: $light;
+    }
+}
