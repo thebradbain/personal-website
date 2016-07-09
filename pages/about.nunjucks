@@ -1,0 +1,6 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<article class="page-about">
+</article>
+{% endblock %}

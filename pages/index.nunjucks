@@ -1,0 +1,17 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<div class="v-center-outer header">
+    <div class="v-center-middle">
+        <div class="v-center-inner">
+            <h1 class="h-center">Brad Bain is a developer, freelancer, and student at Pomona College in Los Angeles</h1>
+            <ul class="nav-els h-center">
+                <li><a href="cv.html">ABOUT</a></li>
+                <li><a href="mailto:brad_bain@live.com">EMAIL</a></li>
+                <li><a href="https://github.com/thebradbain" target="_blank">GITHUB</a></li>
+                <li><a href="https://twitter.com/thebradbain" target="_blank">TWITTER</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,4 +1,7 @@
-<article class="content">
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<article class="page-cv">
     <h3 class="name emphnext">Bradley Bain</h3>
     <br/><br/>
     <h1 class="title">Qualification Summary</h1>
@@ -238,3 +241,4 @@
         </ul>
     </section>
 </article>
+{% endblock %}

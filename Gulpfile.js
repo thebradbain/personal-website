@@ -12,7 +12,8 @@ var gulp = require('gulp'),
     notify = require('gulp-notify'),
     cache = require('gulp-cache'),
     livereload = require('gulp-livereload'),
-    connect = require('gulp-connect');
+    connect = require('gulp-connect'),
+    nunjucksRender = require('gulp-nunjucks-render');
  
 // Styles
 gulp.task('styles', function() {
@@ -54,16 +55,23 @@ gulp.task('clean', function() {
 gulp.task('default', ['clean'], function() {
     gulp.start('styles', 'scripts', 'images', 'html');
 });
- 
+
 gulp.task('html', function() {
-  return [gulp.src('index.html')
-    .pipe(gulp.dest('dist/'))
-    .pipe(notify({message: 'HTML task complete'})),
-    gulp.src('pages/**/*.html')
-    .pipe(gulp.dest('dist/pages/')),
-    gulp.src('fonts/**/*')
-    .pipe(gulp.dest('dist/fonts/'))];
-})
+  // return [gulp.src('index.html')
+  //  .pipe(gulp.dest('dist/'))
+  //  .pipe(notify({message: 'HTML task complete'})),
+  //  gulp.src('pages/**/*.html')
+  //  .pipe(gulp.dest('dist/pages/')),
+  //  gulp.src('fonts/**/*')
+  //  .pipe(gulp.dest('dist/fonts/'))];
+  
+  return [gulp.src('./pages/**/*.+(html|nunjucks)')
+          .pipe(nunjucksRender({path: ['./pages/partials']}))
+          .pipe(gulp.dest('dist/')),
+          
+          gulp.src('fonts/**/*')
+          .pipe(gulp.dest('dist/fonts/'))]
+});
 
 // Watch
 gulp.task('watch', function() {
@@ -78,7 +86,7 @@ gulp.task('watch', function() {
   gulp.watch('img/**/*', ['images']);
   
   // Watch html files
-  gulp.watch('index.html', ['html']);
+  gulp.watch('pages/**/*.+(html|nunjucks)', ['html']);
 
   // Watch any files in dist/, reload on change
   gulp.watch(['dist/**']).on('change', function(file) {
