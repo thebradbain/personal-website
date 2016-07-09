@@ -3,8 +3,8 @@
 $dark: #141414;
 $light: white;
 $accent: #00a5c2;
-$header-font: league-gothic, sans;
-$body-font: pt-serif, serif;
+$header-font: "europa", futura, sans;
+$body-font: futura, serif;
 $gutter: 20px;
 
 @mixin _breakpoints($min, $max: false) {
@@ -43,7 +43,7 @@ body {
     font-family: $body-font;
     h1, h2, h3, h4, h5, h5 {
         font-family: $header-font;
-        text-transform: uppercase;
+        display: inline-block;
     }
     ul, ol {
         margin-bottom: 0;
@@ -68,22 +68,66 @@ body {
     }
 }
 
-.nav-els {
+.header {    
     @include box-sizing;
-    background: url(../images/brad-downtown-flipped.jpeg) no-repeat;
+    background: linear-gradient(
+      rgba(255, 255, 255, 0.45), 
+      rgba(255, 255, 255, 0.45)
+    ),
+
+    url(../images/brad-downtown-flipped.jpeg) no-repeat;
+
     background-size: cover;
     background-position: 75%;
-    display: table;
-    width: 100%;
     height: 100%;
+
+    h1 {
+        text-align: center;
+        padding: $gutter * 4;
+        padding-top: 0;
+        padding-bottom: $gutter;
+        font-size: 25px;
+    }
+}
+
+.v-center-outer {
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    .v-center-middle {
+        display: table-cell;
+        vertical-align: middle;
+
+        .v-center-inner {
+            margin: auto;
+
+        }
+
+        .h-center {
+            display: table;
+            margin: auto;
+        }
+    }
+}
+
+.nav-els {
+    @include box-sizing;
     box-sizing: border-box;
     padding: $gutter;
-    font-family: $header-font;
+    font-family: $body-font;
     li {
         list-style-type: none;
-        line-height: 0.85em;
-        font-size: 25vh;
-        height: 25%;
+        display: inline-block;
+        font-size: 14px;
+        letter-spacing: 0.2em;
+        padding-right: 4.5px;
+        padding-left: 4.5px;
+        font-weight: 500;
+        font-style: normal;
+        text-transform: uppercase;
+        background: $dark;
+        color: $light;
     }
 }
 

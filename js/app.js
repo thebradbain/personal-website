@@ -35,9 +35,9 @@ var pageLoader = {
 $(document).ready(function() {
     pageLoader.init();
 
-    $('body').flowtype({
+    /*$('body').flowtype({
         minFont: 14,
         maxFont: 30,
         fontRatio: 35
-    });
+    });*/
 });
