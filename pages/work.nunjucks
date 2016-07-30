@@ -1,0 +1,19 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<div class="page-work">
+    <h1 class="h-center">Featured Works</h1>
+    <p>A glimpse of my creative portfolio</p>
+
+    <h2>Songsync</h2><br>
+    <p>Listen to the same songs as your friends, whether they're across the world 
+    or across the room, at the same time</p>
+
+    <h2>Pasteify</h2><br>
+    <p>The best way to create the worst Photoshops</p>
+
+    <h2>Quotr</h2><br>
+    <p>Inspiration at your fingertips</p>
+
+</div>
+{% endblock %}

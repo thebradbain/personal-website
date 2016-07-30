@@ -5,18 +5,16 @@
       rgba(255, 255, 255, 0.45)
     ),
 
-    url(../images/brad-downtown-flipped.jpeg) no-repeat;
+    url(../images/downtown-arial.jpg) no-repeat;
 
     background-size: cover;
-    background-position: 75%;
+    background-position: 40%;
     height: 100%;
 
     h1 {
-        text-align: center;
-        padding: $gutter * 4;
-        padding-top: 0;
-        padding-bottom: $gutter;
-        font-size: 25px;
+        @include _breakpoints(0px, 840px) {
+            max-width: 500px;
+        }
     }
 }
 

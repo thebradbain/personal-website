@@ -1,6 +1,11 @@
 {% extends "layout.nunjucks" %}
 
 {% block content %}
-<article class="page-about">
-</article>
+<div class="v-center-outer page-about">
+    <div class="v-center-middle">
+        <div class="v-center-inner">
+            <h1 class="h-center">Involved in the software engineering industry since he was a highschooler, Brad has worked for companies ranging from startups like Dialexa to corporate behemoths like Sabre, published his own personal projects online and on the App Store, and even done some freelance design work on the side. He is a people person first; developer and designer second.</h1>
+        </div>
+    </div>
+</div>
 {% endblock %}

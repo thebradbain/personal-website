@@ -1,0 +1,16 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<div class="v-center-outer page-contact">
+    <div class="v-center-middle">
+        <div class="v-center-inner contact-list">
+            <h1>Get in Touch</h1><br>
+            <h3>email</h3><br>
+            <h3>cellular</h3><br>
+            <h3>twitter</h3><br>
+            <h3>github</h3><br>
+            <h3>snail mail</h3><br>
+        </div>
+    </div>
+</div>
+{% endblock %}

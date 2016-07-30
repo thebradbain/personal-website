@@ -1,5 +1,5 @@
 @mixin _breakpoints($min, $max: false) {
-    /*@if $max == false {
+    @if $max == false {
         @media only screen and (min-width: $min) {
             @content;
         }
@@ -8,7 +8,7 @@
         @media only screen and (min-width: $min) and (max-width: $max) {
             @content;
         }
-    }*/
+    }
 }
 
 @mixin transistion($transistion) {
@@ -76,6 +76,14 @@ body {
             display: table;
             margin: auto;
         }
+    }
+
+    h1 {
+        max-width: 900px;
+        font-size: 20px;
+        line-height: 1.5em;
+        text-align: center;
+        padding: 0 $gutter;
     }
 }
 
