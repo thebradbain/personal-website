@@ -1,0 +1,24 @@
+{% extends "content-layout.nunjucks" %}
+
+{% block vcontent %}
+<div class="page-work page-work-dialexa">
+    <h1>Dialexa</h1>
+    <br>
+    <br>
+    <p>Dialexa is an end-to-end software development and external consulting startup. From launching
+    in-house products and companies such as <a class="underline" href="https://www.vin.li" taget="blank">Vinli</a>, which brings a
+    WiFi Hotspot and custom third party applications to any car, and <a class="underline" href="https://www.tryrobin.com" target="blank">Robin</a>,
+    an automated lawn care service utilizing custom-made lawn-mowing robots, to partnerships with companies such as Amazon, Uber, JLL, Lockheed Martin, and more,
+    Dialexa has experience with web, mobile, native, hardware, and IoT.
+    </p>
+    <br>
+    <p>As an intern for two years, I joined Dialexa when the team was only 20 people, and I was there throughout their rapid growth to over 150 employees, two spin-off companies,
+    and countless projects.</p>
+    <br>
+    <p>During my time at Dialexa, I worked on a variety of projects, including building a bridge between Vinli's hardware readings and its online API service,
+    Q&A work for HiRise, a marketplace to buy and lease office space online, for real estate giant JLL, and communicating with my own client to rapidly develop and
+    iterate upon the firmware for a label-less bioassay system for laboratory group Resonant Sensors.</p>
+    <br><br><br><br>
+    <p class="pull-left"><em>Interested in learning more? <span class="underline"><a href="../contact.html">Get in touch</a></span></em></p>
+    </div>
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<div class="v-center-outer">
+    <div class="v-center-middle">
+        <div class="v-center-inner">
+            <div class="h-center">
+                {% block vcontent %} {% endblock %}
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

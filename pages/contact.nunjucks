@@ -1,16 +1,14 @@
-{% extends "layout.nunjucks" %}
+{% extends "content-layout.nunjucks" %}
 
-{% block content %}
-<div class="v-center-outer page-contact">
-    <div class="v-center-middle">
-        <div class="v-center-inner contact-list">
-            <h1>Get in Touch</h1><br>
-            <h3>email</h3><br>
-            <h3>cellular</h3><br>
-            <h3>twitter</h3><br>
-            <h3>github</h3><br>
-            <h3>snail mail</h3><br>
-        </div>
+{% block vcontent %}
+<div class="page-contact">
+    <div class="h-center-children">
+    <h1>GET IN TOUCH</h1><br>
+    <h3 data-hover="brad_bain@live.com">email</h3><br/>
+    <h3 data-hover="214.906.4545">cellular</h3><br/>
+    <h3 data-hover="@thebradbain"><a href="https://github.com/thebradbain" target="blank">github</a></h3><br/>
+    <h3 data-hover="170 E. Sixth St. Box #1240 Claremont, CA 91711">snail mail</h3><br/>
     </div>
+    <script src="scripts/contact.js"></script>
 </div>
 {% endblock %}

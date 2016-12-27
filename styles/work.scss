@@ -1,3 +1,15 @@
 .page-work {
+  padding: $gutter;
+  max-width: 900px;
 
+  h1 {
+    font-weight: bolder;
+  }
+}
+
+.page-work-sabre, .page-work-dialexa {
+  h1 {
+    margin-left: 0;
+    padding-left: 0;
+  }
 }

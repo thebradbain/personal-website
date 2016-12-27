@@ -1,19 +1,22 @@
-{% extends "layout.nunjucks" %}
+{% extends "content-layout.nunjucks" %}
 
-{% block content %}
+{% block vcontent %}
 <div class="page-work">
-    <h1 class="h-center">Featured Works</h1>
-    <p>A glimpse of my creative portfolio</p>
+    <div class="h-center-children">
+    <h1>FEATURED WORKS</h1><br>
 
-    <h2>Songsync</h2><br>
-    <p>Listen to the same songs as your friends, whether they're across the world 
-    or across the room, at the same time</p>
+    <h3><a href="./work/dialexa.html">dialexa</a></h3><br>
+    
+    <h3><a href="./work/sabre.html">sabre</a></h3><br>
 
-    <h2>Pasteify</h2><br>
-    <p>The best way to create the worst Photoshops</p>
+    <h3><a href="https://itunes.apple.com/us/app/songsync/id1025477911?mt=8"
+      target="blank">songsync</a></h3><br>
 
-    <h2>Quotr</h2><br>
-    <p>Inspiration at your fingertips</p>
+    <h3><a href="https://itunes.apple.com/us/app/pasteify/id792966339?mt=8"
+      target="blank">pasteify</a></h3><br>
 
+    <h3><a href="https://www.microsoft.com/en-us/store/p/quotr/9nblggh08kmp"
+      target="blank">quotr</a></h3><br>
+    </div>
 </div>
 {% endblock %}

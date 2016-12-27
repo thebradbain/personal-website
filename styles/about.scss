@@ -1,7 +1,12 @@
 .page-about {
     h1 {
-        @include _breakpoints(0px, 748px) {
+        @include _breakpoints(0px, 1024px) {
             text-align: right;
+            max-width: 730px;
         }
+    }
+
+    p {
+      padding: $gutter;
     }
 }

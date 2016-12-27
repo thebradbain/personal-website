@@ -36,6 +36,10 @@ body {
         font-family: $header-font;
         display: inline-block;
     }
+    p {
+      font-size: 16px;
+      line-height: 1.5em;
+    }
     ul, ol {
         margin-bottom: 0;
     }
@@ -69,7 +73,13 @@ body {
 
         .v-center-inner {
             margin: auto;
+        }
 
+        .h-center-children {
+            * {
+                display: table;
+                margin: auto;
+            }
         }
 
         .h-center {
@@ -80,26 +90,12 @@ body {
 
     h1 {
         max-width: 900px;
-        font-size: 20px;
+        font-size: 18px;
         line-height: 1.5em;
         text-align: center;
         padding: 0 $gutter;
     }
 }
-
-/*.content {
-    @include box-sizing;
-    position: absolute;
-    padding: $gutter;
-    width: 100%;
-    min-height: 100%;
-    top: 0;
-
-    background: white;
-    &:empty {
-        visibility: hidden;
-    }
-}*/
 
 #content {
     @include box-sizing;
@@ -124,7 +120,15 @@ ul .bullets {
     margin-right: 0;
     padding-left: 10px;
     padding-right: 0px;
-    li { 
+    li {
         list-style-type: circle;
     }
+}
+
+.pull-left {
+  margin-left: 0;
+}
+
+.pull-right {
+  margin-right: 0;
 }

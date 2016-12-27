@@ -1,0 +1,20 @@
+{% extends "content-layout.nunjucks" %}
+
+{% block vcontent %}
+<div class="page-work page-work-sabre">
+    <h1>Sabre Labs</h1>
+    <br>
+    <br>
+    <p>Sabre Labs is a research group focused on developing technologies to transform
+    Sabre and the rest of the travel industry in the near future. Rapid prototyping,
+    cutting-edge technologies, and fast iteration are the norm.</p>
+    <br>
+    <p>As a summer intern, I worked full time upon integrating then-emerging web technologies (React and Polymer) with
+       new web API and updating TripCase, Sabre's consumer facing mobile application built upon Ember.</p>
+    <br>
+    <p>Other experiences include giving a presentation to company executives over data mining using supervised machine learning to improve the customer
+       conversion rate of promotional emails through targeted advertising, and participating in multiple focus groups on consumer-facing, white-label services.</p>
+    <br><br><br><br>
+    <p class="pull-left"><em>Interested in learning more? <span class="underline"><a href="../contact.html">Get in touch</a></span></em></p>
+</div>
+{% endblock %}

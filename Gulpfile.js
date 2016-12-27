@@ -14,7 +14,7 @@ var gulp = require('gulp'),
     livereload = require('gulp-livereload'),
     connect = require('gulp-connect'),
     nunjucksRender = require('gulp-nunjucks-render');
- 
+
 // Styles
 gulp.task('styles', function() {
   return sass('styles/app.scss', {'loadPath' : './'})
@@ -25,10 +25,10 @@ gulp.task('styles', function() {
     .pipe(gulp.dest('dist/styles'))
     .pipe(notify({ message: 'Styles task complete' }));
 });
- 
+
 // Scripts
 gulp.task('scripts', function() {
-  return gulp.src('{js,lib}/*.js')
+  return gulp.src('{js/global,lib}/*.js')
     .pipe(concat('main.js'))
     .pipe(gulp.dest('dist/scripts'))
     .pipe(rename({ suffix: '.min' }))
@@ -36,7 +36,15 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('dist/scripts'))
     .pipe(notify({ message: 'Scripts task complete' }));
 });
- 
+gulp.task('page_scripts', function() {
+  return gulp.src('js/pages/*.js')
+    .pipe(gulp.dest('dist/scripts'))
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(uglify())
+    .pipe(gulp.dest('dist/scripts'))
+    .pipe(notify({ message: 'Page scripts task complete' }));
+});
+
 // Images
 gulp.task('images', function() {
   return gulp.src('img/**/*')
@@ -44,16 +52,16 @@ gulp.task('images', function() {
     .pipe(gulp.dest('dist/images'))
     .pipe(notify({ message: 'Images task complete' }));
 });
- 
+
 // Clean
 gulp.task('clean', function() {
   return gulp.src(['dist/styles', 'dist/scripts', 'dist/images'], {read: false})
     .pipe(clean());
 });
- 
+
 // Default task
 gulp.task('default', ['clean'], function() {
-    gulp.start('styles', 'scripts', 'images', 'html');
+    gulp.start('styles', 'scripts', 'page_scripts', 'images', 'html');
 });
 
 gulp.task('html', function() {
@@ -64,27 +72,27 @@ gulp.task('html', function() {
   //  .pipe(gulp.dest('dist/pages/')),
   //  gulp.src('fonts/**/*')
   //  .pipe(gulp.dest('dist/fonts/'))];
-  
+
   return [gulp.src('./pages/**/*.+(html|nunjucks)')
           .pipe(nunjucksRender({path: ['./pages/partials']}))
           .pipe(gulp.dest('dist/')),
-          
+
           gulp.src('fonts/**/*')
           .pipe(gulp.dest('dist/fonts/'))]
 });
 
 // Watch
 gulp.task('watch', function() {
- 
+
   // Watch .scss files
   gulp.watch('styles/**/*.scss', ['styles']);
- 
+
   // Watch .js files
-  gulp.watch('js/**/*.js', ['scripts']);
- 
+  gulp.watch('js/**/*.js', ['scripts', 'page_scripts']);
+
   // Watch image files
   gulp.watch('img/**/*', ['images']);
-  
+
   // Watch html files
   gulp.watch('pages/**/*.+(html|nunjucks)', ['html']);
 

@@ -1,11 +1,9 @@
-{% extends "layout.nunjucks" %}
+{% extends "content-layout.nunjucks" %}
 
-{% block content %}
-<div class="v-center-outer page-about">
-    <div class="v-center-middle">
-        <div class="v-center-inner">
-            <h1 class="h-center">Involved in the software engineering industry since he was a highschooler, Brad has worked for companies ranging from startups like Dialexa to corporate behemoths like Sabre, published his own personal projects online and on the App Store, and even done some freelance design work on the side. He is a people person first; developer and designer second.</h1>
-        </div>
-    </div>
+{% block vcontent %}
+<div class="page-about">
+    <h1>Involved in the software engineering industry since he was a highschooler in Dallas, Brad has worked for companies ranging from startups like Dialexa to corporate behemoths like Sabre, published his own personal projects online and on the App Store, and even done some freelance design work on the side; Brad is a people person first, developer and designer second.</h1>
+    <br/><br/><br/><br/>
+    <p class="pull-right"><em>Interested in learning more? <span class="underline"><a href="../work.html">Check out my work</a></span></em></p>
 </div>
 {% endblock %}
