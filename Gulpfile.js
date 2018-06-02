@@ -78,7 +78,11 @@ gulp.task('html', function() {
           .pipe(gulp.dest('dist/')),
 
           gulp.src('fonts/**/*')
-          .pipe(gulp.dest('dist/fonts/'))]
+          .pipe(gulp.dest('dist/fonts/')),
+
+          gulp.src('static/**/*')
+          .pipe(gulp.dest('dist/static/'))
+        ]
 });
 
 // Watch
