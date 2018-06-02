@@ -20,12 +20,12 @@
     <p>Download the app <a class="underline" href="https://itunes.apple.com/us/app/songsync/id1025477911?mt=8">here</a>.
     <br>
     <br>
-    <p>
-    <img width="19%" src="../images/songsync/songsync-1.png" />
-    <img width="19%" src="../images/songsync/songsync-2.png" />
-    <img width="19%" src="../images/songsync/songsync-3.png" />
-    <img width="19%" src="../images/songsync/songsync-4.png" />
-    <img width="19%" src="../images/songsync/songsync-5.png" />
+    <p class="gallery">
+    <img width="18%" src="../images/songsync/songsync-1.png" />
+    <img width="18%" src="../images/songsync/songsync-2.png" />
+    <img width="18%" src="../images/songsync/songsync-3.png" />
+    <img width="18%" src="../images/songsync/songsync-4.png" />
+    <img width="18%" src="../images/songsync/songsync-5.png" />
     </p>
     <br><br><br><br>
     <p class="pull-left"><em>Interested in learning more? <span class="underline"><a href="../contact.html">Get in touch</a></span></em></p>

@@ -17,7 +17,7 @@
     <p>Explore the project <a class="underline" href="http://census-income-map.herokuapp.com/">here</a>.
     It is also available on my <a class="underline" href="https://github.com/thebradbain/census-income-map">GitHub</a></p>
     <br>
-    <p>
+    <p class="gallery">
     <img width="100%" src="../images/census-income-map.png" />
     </p>
     <br><br><br><br>
