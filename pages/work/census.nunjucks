@@ -1,0 +1,26 @@
+{% extends "content-layout.nunjucks" %}
+
+{% block vcontent %}
+<div class="page-work page-work-dialexa">
+    <h1>Median Income by Census Tract, Visualized</h1>
+    <br>
+    <br>
+    <p>Inspired by a politics class studying the socioeconomic divisions within
+    Los Angeles both by analyzing data and exploring with feet on the ground, I
+    decided to visualize the cities of California by median income using the largest
+    dataset I had available: the US Census. The results were illuminating– areas that,
+    when paired with an understanding of recent context and history, show the effect
+    of previous urban planning decisions and ongoing gentrification and displacement,
+    in addition to the staggering income gaps in both San Francisco and Los Angeles.
+    </p>
+    <br>
+    <p>Explore the project <a class="underline" href="http://census-income-map.herokuapp.com/">here</a>.
+    It is also available on my <a class="underline" href="https://github.com/thebradbain/census-income-map">GitHub</a></p>
+    <br>
+    <p>
+    <img width="100%" src="../images/census-income-map.png" />
+    </p>
+    <br><br><br><br>
+    <p class="pull-left"><em>Interested in learning more? <span class="underline"><a href="../contact.html">Get in touch</a></span></em></p>
+    </div>
+{% endblock %}

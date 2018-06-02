@@ -1,0 +1,25 @@
+{% extends "content-layout.nunjucks" %}
+
+{% block vcontent %}
+<div class="page-work page-work-dialexa">
+    <h1>Pasteify</h1>
+    <br>
+    <br>
+    <p>Pasteify is the best way to create the worst cut-outs.
+    </p>
+    <br>
+    <p> Ever wanted to paste yourself onto a celebrity's body, make a hilarious
+        birthday collage, or illustrate some other ridiculous situation? You could
+        spend hundreds of dollars and the better part of an hour doing the same
+        thing in another application, or you could spend 30 seconds creating a
+        "good enough, now laugh please" masterpiece.
+    </p>
+    <br>
+    <p>Download the app <a class="underline" href="https://itunes.apple.com/us/app/pasteify/id792966339?mt=8">here</a>.
+    <br>
+    <br>
+    <p>
+    <br><br><br><br>
+    <p class="pull-left"><em>Interested in learning more? <span class="underline"><a href="../contact.html">Get in touch</a></span></em></p>
+    </div>
+{% endblock %}

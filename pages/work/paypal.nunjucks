@@ -1,0 +1,16 @@
+{% extends "content-layout.nunjucks" %}
+
+{% block vcontent %}
+<div class="page-work page-work-dialexa">
+    <h1>PayPal (Braintree)</h1>
+    <br>
+    <br>
+    <p>Braintree is the payments processing division of PayPal, serving not just as a payment gateway
+    for PayPal, but countless other companies around the world, including Uber, OpenTable, StubHub, and more.
+    </p>
+    <br>
+    <p>I will be interning as a software engineer at Braintree this coming summer, 2018, in San Francisco.</p>
+    <br><br><br><br>
+    <p class="pull-left"><em>Interested in learning more? <span class="underline"><a href="../contact.html">Get in touch</a></span></em></p>
+    </div>
+{% endblock %}

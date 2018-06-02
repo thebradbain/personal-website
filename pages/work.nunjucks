@@ -3,20 +3,26 @@
 {% block vcontent %}
 <div class="page-work">
     <div class="h-center-children">
-    <h1>FEATURED WORKS</h1><br>
+    <h1>PROFESSIONAL EXPERIENCE</h1><br>
+
+    <h3><a href="./work/paypal.html">paypal</a></h3><br>
 
     <h3><a href="./work/dialexa.html">dialexa</a></h3><br>
-    
+
     <h3><a href="./work/sabre.html">sabre</a></h3><br>
 
-    <h3><a href="https://itunes.apple.com/us/app/songsync/id1025477911?mt=8"
-      target="blank">songsync</a></h3><br>
+    <h1>FEATURED PROJECTS</h1><br>
+    <h3><a href="./work/songsync.html">songsync</a></h3><br>
 
-    <h3><a href="https://itunes.apple.com/us/app/pasteify/id792966339?mt=8"
-      target="blank">pasteify</a></h3><br>
+    <h3><a href="./work/census.html">census</a></h3><br>
 
-    <h3><a href="https://www.microsoft.com/en-us/store/p/quotr/9nblggh08kmp"
-      target="blank">quotr</a></h3><br>
+    <h3><a href="./work/pasteify.html">pasteify</a></h3><br>
+
+    <br><br>
+
+    <a href="../static/resume.pdf" target="blank" class="underline">Looking for a formal resumé?</a>
+    <br>
+
     </div>
 </div>
 {% endblock %}

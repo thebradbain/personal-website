@@ -1,0 +1,33 @@
+{% extends "content-layout.nunjucks" %}
+
+{% block vcontent %}
+<div class="page-work page-work-dialexa">
+    <h1>Songsync</h1>
+    <br>
+    <br>
+    <p>Have a large iTunes Music library? Songsync is the best way to
+    sync your Apple Music library to Spotify, automatically.
+    </p>
+    <br>
+    <p>Make the long, arduous process of manually combing through your iTunes library,
+      searching and adding a song on Spotify, and then having to repeat the steps
+      over and over again for each song you'd like to add a thing of the past.
+      Simply select which songs from your iTunes music library you'd like to sync
+      to Spotify and Songsync will handle the rest, so you can spend less time
+      organizing your music and more time listening to it.
+    </p>
+    <br>
+    <p>Download the app <a class="underline" href="https://itunes.apple.com/us/app/songsync/id1025477911?mt=8">here</a>.
+    <br>
+    <br>
+    <p>
+    <img width="19%" src="../images/songsync/songsync-1.png" />
+    <img width="19%" src="../images/songsync/songsync-2.png" />
+    <img width="19%" src="../images/songsync/songsync-3.png" />
+    <img width="19%" src="../images/songsync/songsync-4.png" />
+    <img width="19%" src="../images/songsync/songsync-5.png" />
+    </p>
+    <br><br><br><br>
+    <p class="pull-left"><em>Interested in learning more? <span class="underline"><a href="../contact.html">Get in touch</a></span></em></p>
+    </div>
+{% endblock %}

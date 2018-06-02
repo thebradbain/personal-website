@@ -10,11 +10,15 @@
     cutting-edge technologies, and fast iteration are the norm.</p>
     <br>
     <p>As a summer intern, I worked full time upon integrating then-emerging web technologies (React and Polymer) with
-       new web API and updating TripCase, Sabre's consumer facing mobile application built upon Ember.</p>
+       a new web API and updating TripCase, Sabre's consumer facing mobile application built upon Ember.js.</p>
     <br>
     <p>Other experiences include giving a presentation to company executives over data mining using supervised machine learning to improve the customer
        conversion rate of promotional emails through targeted advertising, and participating in multiple focus groups on consumer-facing, white-label services.</p>
-    <br><br><br><br>
+    <br><br>
+
+    <div class="youtube-embed"><iframe allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/jm0GtlzrKlA#action?ecver=1&amp;iv_load_policy=1&amp;yt:stretch=16:9&amp;autohide=1&amp;color=red&amp;width=560&amp;width=560" width="560" height="315" allowtransparency="true" frameborder="0"><div><a  id="ZciGACUN" href="http://embedgooglemap.co.uk">How to add Google Maps with no API key</a></div><small>Powered by <a href="https://youtubevideoembed.com/">Embed YouTube Video</a></small></iframe></div>
+
+    <br><br>
     <p class="pull-left"><em>Interested in learning more? <span class="underline"><a href="../contact.html">Get in touch</a></span></em></p>
 </div>
 {% endblock %}
