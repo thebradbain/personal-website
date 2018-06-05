@@ -1,7 +1,7 @@
-{% extends "content-layout.nunjucks" %}
+{% extends "page-content-layout.nunjucks" %}
 
-{% block vcontent %}
-<div class="page-work page-work-sabre">
+{% block pagecontent %}
+<div>
     <h1>Sabre Labs</h1>
     <br>
     <br>
@@ -17,8 +17,5 @@
     <br><br>
 
     <div class="youtube-embed"><iframe allowFullScreen="allowFullScreen" src="https://www.youtube.com/embed/jm0GtlzrKlA#action?ecver=1&amp;iv_load_policy=1&amp;yt:stretch=16:9&amp;autohide=1&amp;color=red&amp;width=560&amp;width=560" width="560" height="315" allowtransparency="true" frameborder="0"><div><a  id="ZciGACUN" href="http://embedgooglemap.co.uk">How to add Google Maps with no API key</a></div><small>Powered by <a href="https://youtubevideoembed.com/">Embed YouTube Video</a></small></iframe></div>
-
-    <br><br>
-    <p class="pull-left"><em>Interested in learning more? <span class="underline"><a href="../contact.html">Get in touch</a></span></em></p>
 </div>
 {% endblock %}

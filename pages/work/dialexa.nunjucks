@@ -1,7 +1,7 @@
-{% extends "content-layout.nunjucks" %}
+{% extends "page-content-layout.nunjucks" %}
 
-{% block vcontent %}
-<div class="page-work page-work-dialexa">
+{% block pagecontent %}
+<div>
     <h1>Dialexa</h1>
     <br>
     <br>
@@ -18,7 +18,5 @@
     <p>During my time at Dialexa, I worked on a variety of projects, including building a bridge between Vinli's hardware readings and its online API service,
     Q&A work for HiRise, a marketplace to buy and lease office space online, for real estate giant JLL, and communicating with my own client to rapidly develop and
     iterate upon the firmware for a label-less bioassay system for laboratory group Resonant Sensors.</p>
-    <br><br><br><br>
-    <p class="pull-left"><em>Interested in learning more? <span class="underline"><a href="../contact.html">Get in touch</a></span></em></p>
-    </div>
+</div>
 {% endblock %}

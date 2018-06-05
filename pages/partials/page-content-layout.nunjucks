@@ -1,0 +1,12 @@
+{% extends "content-layout.nunjucks" %}
+
+{% block vcontent %}
+<div class="page-work">
+  {% block pagecontent %} {% endblock %}
+
+  <br><br><br><br>
+  <p class="pull-left">
+    <em>Interested in learning more? <span class="underline"><a href="../contact.html">Get in touch</a></span></em>
+  </p>
+</div>
+{% endblock %}

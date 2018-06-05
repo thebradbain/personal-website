@@ -1,7 +1,7 @@
-{% extends "content-layout.nunjucks" %}
+{% extends "page-content-layout.nunjucks" %}
 
-{% block vcontent %}
-<div class="page-work page-work-dialexa">
+{% block pagecontent %}
+<div>
     <h1>Median Income by Census Tract, Visualized</h1>
     <br>
     <br>
@@ -20,7 +20,5 @@
     <p class="gallery">
     <img width="100%" src="../images/census-income-map.png" />
     </p>
-    <br><br><br><br>
-    <p class="pull-left"><em>Interested in learning more? <span class="underline"><a href="../contact.html">Get in touch</a></span></em></p>
-    </div>
+</div>
 {% endblock %}
