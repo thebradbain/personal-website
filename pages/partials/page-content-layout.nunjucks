@@ -8,5 +8,10 @@
   <p class="pull-left">
     <em>Interested in learning more? <span class="underline"><a href="../contact.html">Get in touch</a></span></em>
   </p>
+  <p class="pull-right">
+    <em>Or go back
+      <span class="underline"><a href="../index.html">home</a></span>
+    </em>
+  </p>
 </div>
 {% endblock %}
