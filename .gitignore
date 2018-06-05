@@ -1,5 +1,6 @@
 dist/
 dist.zip
+.DEPLOY_SECRET
 node_modules/
 .sass-cache/
 npm-debug.log

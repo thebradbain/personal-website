@@ -1,5 +1,5 @@
 // Load plugins
-var gulp = require('gulp'),
+let gulp = require('gulp'),
     sass = require('gulp-ruby-sass'),
     autoprefixer = require('gulp-autoprefixer'),
     minifycss = require('gulp-minify-css'),
@@ -13,7 +13,10 @@ var gulp = require('gulp'),
     cache = require('gulp-cache'),
     livereload = require('gulp-livereload'),
     connect = require('gulp-connect'),
-    nunjucksRender = require('gulp-nunjucks-render');
+    nunjucksRender = require('gulp-nunjucks-render'),
+    bb = require('bitballoon');
+
+const DEPLOY_TOKEN = require('./.DEPLOY_SECRET');
 
 // Styles
 gulp.task('styles', function() {
@@ -110,4 +113,14 @@ gulp.task('watch', function() {
 gulp.task('serve', ['default'], function() {
   connect.server({root: 'dist', livereload: true})
   gulp.start('watch')
+});
+
+gulp.task('deploy', function() {
+  bb.deploy({
+    access_token: DEPLOY_TOKEN,
+    site_id: 'bradbain.bitballoon.com',
+    dir: 'dist'
+  }, function(err, deploy) {
+    if (err) { throw(err) }
+  });
 });
