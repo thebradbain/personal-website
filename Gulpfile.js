@@ -16,8 +16,6 @@ let gulp = require('gulp'),
     nunjucksRender = require('gulp-nunjucks-render'),
     bb = require('bitballoon');
 
-const DEPLOY_TOKEN = require('./.DEPLOY_SECRET');
-
 // Styles
 gulp.task('styles', function() {
   return sass('styles/app.scss', {'loadPath' : './'})
@@ -113,14 +111,4 @@ gulp.task('watch', function() {
 gulp.task('serve', ['default'], function() {
   connect.server({root: 'dist', livereload: true})
   gulp.start('watch')
-});
-
-gulp.task('deploy', function() {
-  bb.deploy({
-    access_token: DEPLOY_TOKEN,
-    site_id: 'bradbain.bitballoon.com',
-    dir: 'dist'
-  }, function(err, deploy) {
-    if (err) { throw(err) }
-  });
 });
